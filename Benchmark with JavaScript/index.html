@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="JavaRedo.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MWI Benchmark</title>
+</head>
+
+<!-- Reorganized the whitespace on the page to make it easier to read. Everything from here to the 
+next comment was reorganized and I fixed the syntax to be appropriate, readable, and to have the
+classes and id's make sense.-->
+
+<body>
+  <header>
+    <img src="Images/mwi-logo-horizontal.png">
+  </header>
+
+<hr />
+
+<h1 class="heading-one"><u>HEADING ONE</u></h1>
+<div class="maincontainer">
+<div class="container1">
+  <div class="gray"></div>
+  <h2 class="heading2">Heading 2</h2>
+    <p class="flex">This is a paragraph text that is meant to flex and wrap around to a 
+  new line based on the number of characters in this container. Please
+  make sure this is looking pretty based on the amount of characters this is taking up.
+    </p>
+  <button class="button">Read More</button>
+</div>
+<div class="container2">
+  <div class="gray"></div>
+  <h2 class="heading2">Heading 2</h2>
+    <p class="flex">This is a paragraph text that is meant to flex and wrap around to a 
+  new line based on the number of characters in this container. Please
+  make sure this is looking pretty based on the amount of characters this is taking up.
+    </p>
+  <button class="button">Read More</button>
+</div>
+<div class="container3">
+  <div class="gray"></div>
+  <h2 class="heading2">Heading 2</h2>
+    <p class="flex">This is a paragraph text that is meant to flex and wrap around to a 
+  new line based on the number of characters in this container. Please
+  make sure this is looking pretty based on the amount of characters this is taking up.
+    </p>
+  <button class="button">Read More</button>
+</div>
+</div>
+<!-- Eliminated the line breaks, as they were not needed.-->
+
+<!-- In the previous test I realized i had very sloppy syntax with this form.
+Ive made the form easier to read but also used best, and correct, syntax practices.
+I used labels where i previously used heading tags, and also used the correct attributes.-->
+
+<section>
+  <div class="formcontain">
+    <h2 class="contact">CONTACT</h2>
+  <form action="/example.html" method="GET">
+    <label id="white" for="email">Email</label><label id="align"><i>Email is required</i></label>
+    <br />
+    <input type="email" name="email" id="email">
+    <br />
+    <label id="white" for="subject">Subject</label><label id="align"><i>Subject is required</i></label>
+    <br />
+    <input type="text" name="subject" id="subject">
+    <br />
+    <label id="white" for="message">Message</label><label id="align"><i>Message is required</i></label>
+    <br />
+    <input type="text" name="message" id="message">
+      <section class="submission">
+        <input id="submit" type="submit">
+      </section>
+  </form>
+</div>
+</section>
+
+<h1 class="heading-one"><u>HEADING ONE</u></h1>
+<p id="java">Remove the duplicates in 2 Javascript objects and output the list of distinct names
+  in an unordered list when this 
+  <span><a href="#" onclick="showMessage()" onclick="toggleContent();">link is clicked</a></span>, 
+  if the operation has been completed already notify the user that it has been done.
+</p>
+<br />
+<br />
+<br />
+
+<div id="content">
+  <ul id="puzzle">
+  </ul>
+</div>
+
+
+<footer>
+  <p><i>Thanks for taking the Midwestern Interactive Benchmark Test.</i></p>
+</footer>
+
+<script src="puzzle.js"></script>
+</body>
+
+</html>

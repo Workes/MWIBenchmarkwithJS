@@ -1,0 +1,237 @@
+/* The CSS below has been reorganized
+with better syntax and practices */
+
+/* While re-doing this test I ended up changing
+most all of these classes and id's, I made it to where
+the names of them all made sense and adjusted the responsiveness
+of the webpage as best as I could */
+
+
+/* I added box sizing to the css
+in order to better style along with 
+reseting the margins and padding. */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    min-width: 25px;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.heading-one{
+    margin-top: 25px;
+    margin-left: 65px;
+    margin-bottom: 65px;
+    width: 500px;
+    max-width:100%;
+    min-width: 25px;
+    max-height: 500px;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+/* Everything from here to the button was completley
+rearranged and organized. I added a media querey that allows
+the content to align vertically when at a certain width. */
+
+.maincontainer{
+    font-size: 0; 
+    margin-left: 65px;
+}
+
+/* Creates a gray box that is responsive */
+.gray{
+    background-color: lightgray;
+    width: 300px;
+    height: 75px;
+    margin-bottom: 20px;
+}
+
+.heading2{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+/* Each container is the same due to them being inline-block
+elements. I set the same width to each, adding up to 100% width.
+The box-sizing and the width syntax allow for the columns to be 
+responsive. */
+
+.container1{
+    font-size: 16px; 
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3333%;
+    box-sizing: border-box;
+}
+
+.container2{
+    font-size: 16px; 
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3333%;
+    box-sizing: border-box;
+}
+
+.container3{
+    font-size: 16px; 
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3333%;
+    box-sizing: border-box;
+}
+
+.flex{
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 450px;
+    min-width: 50px;
+    max-width: 100%;
+    line-height: 1.5em;
+    color: gray;
+}
+
+/* Here is the media querey as mentioned earlier */
+  
+  @media (max-width: 768px) { 
+    .container1, .container2, .container3 {
+      display: block;
+      width: auto;
+    }
+  }
+
+  button{
+      margin-bottom: 20px;
+      padding: 15px;
+      font-size: 16px;
+      border: none;
+      background-color: black;
+      color: white;
+  }
+
+  section{
+      background-color: lightgray;
+
+  }
+
+  /* The same practices were used in the form in order
+  to make it scale to screen size, minus the media querey */
+
+  .formcontain{
+    display: block;
+    text-align: center;
+  }
+
+  .contact{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: normal;
+  }
+
+  form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  input{
+    margin-bottom: 25px;
+  }
+
+  #white{
+    color: white;
+  }
+
+  #align{
+    float: right;
+    color: red;
+  }
+
+  #email{
+    border: none;
+    width: 500px;
+    height: 25px;
+  }
+
+  #subject{
+    border: none;
+    width: 500px;
+    height: 25px;
+  }
+
+  #message{
+    border: none;
+    height: 250px;
+    width: 500px;
+  }
+
+  #submit{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+
+  span > a{
+      color: red;
+  }
+
+  #java{
+    font-size: 24px;
+    margin-left: 65px;
+    margin-bottom: 65px;
+    max-width:100%;
+    min-width: 25px;
+    max-height: 500px;
+  }
+
+  #content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    min-width: 25px;
+    max-width: 960px;
+    font-size: 32px;
+  }
+
+  li{
+    margin-bottom: 65px;
+    list-style-type: none;
+    line-height: .5em;
+  }
+
+  footer{
+    height: 25px;
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+  }
